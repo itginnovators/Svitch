@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVITCH</title>
+    <!-- Bootstarp & Icons-->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap-extended.css">
+    <link rel="stylesheet" href="./assets/css/icons.css">
+
+    <!-- Css Links -->
+    <link rel="stylesheet" href="./assets/css/svitch-header.css">
+    <link rel="stylesheet" href="./assets/css/svitvch-main.css">
+
+</head>
+
+<body class="login-bg">
+    <div class="container login-container">
+        <div class="row">
+            <div class="col-md-8 login-page-image">
+            </div>
+            <div class="col-lg-4 login-form">
+                <img src="./assets/images/svitch-logo.jpg" alt="switch-logo">
+
+                <h5>USER LOGIN</h5>
+
+                <form action="./svitch-home.html">
+                    <div class="form-group login-form-group">
+                        <!-- <label for="inputName">Email:</label> -->
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="login-email"><i class='bx bx-envelope'></i></span>
+                            </div>
+                            <input type="email" class="form-control" placeholder="Email Address" aria-label="Eamil"
+                                aria-describedby="login-email" required>
+                        </div>
+
+                        <!-- <label for="inputName">Email:</label> -->
+                        <div class="input-group" id="show_hide_password">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="login-password"><i class='bx bx-lock-alt'></i></span>
+                            </div>
+                            <input type="password" class="form-control" id="inputChoosePassword"
+                                placeholder="Enter Password" required minlength="8">
+                            <a href="javascript:;" class="input-group-text bg-transparent"><i
+                                    class='bx bx-hide'></i></a>
+                        </div>
+
+                        <div class="forgot-password"><a href="./forgot-password.html">Forgot Password ?</a>
+                        </div>
+
+                        <div class="button-group">
+                            <button type="submit" class="login-btn">LOG IN</button></a>
+                        </div>
+                </form>
+
+                <div class="powered-by">
+                    <p>Powered by:</p>
+                    <img src="./assets/images/integra-logo.png" alt="integra-logo">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#show_hide_password a").on('click', function (event) {
+                event.preventDefault();
+                if ($('#show_hide_password input').attr("type") == "text") {
+                    $('#show_hide_password input').attr('type', 'password');
+                    $('#show_hide_password a i').addClass("bx-hide");
+                    $('#show_hide_password a i').removeClass("bx-show");
+                } else if ($('#show_hide_password input').attr("type") == "password") {
+                    $('#show_hide_password input').attr('type', 'text');
+                    $('#show_hide_password a i').removeClass("bx-hide");
+                    $('#show_hide_password a i').addClass("bx-show");
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

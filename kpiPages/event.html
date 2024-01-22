@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Svitch</title>
+
+    <!-- Bootstarp & Icons-->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap-extended.css">
+    <link rel="stylesheet" href="../assets/css/icons.css">
+
+    <!-- Css Links -->
+    <link rel="stylesheet" href="../assets/css/svitch-header.css">
+    <link rel="stylesheet" href="../assets/css/svitvch-main.css">
+
+    <!-- Data Tables -->
+    <link href="https://kendo.cdn.telerik.com/themes/7.0.1/default/default-main.css" rel="stylesheet" />
+
+    <!-- Include Kendo UI CSS -->
+    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2021.3.1207/styles/kendo.common.min.css">
+    <!--plugins-->
+    <script src="../assets/js/jquery.min.js"></script>
+
+    <!-- Include Kendo UI JavaScript -->
+    <script src="https://kendo.cdn.telerik.com/2021.3.1207/js/kendo.all.min.js"></script>
+
+    <!-- Cookies js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/3.0.1/js.cookie.min.js"></script>
+</head>
+
+<body>
+    <!-- Header Start -->
+    <nav>
+        <div class="navbar">
+            <i class='bx bx-menu'></i>
+            <div class="logo"><img src="../assets/images/svitch-logo.jpg" alt="svitch-logo"></div>
+            <div class="nav-links">
+                <div class="sidebar-logo">
+                    <span class="logo-name"><img src="../assets/images/svitch-logo.jpg" alt="svitch-logo"></span>
+                    <i class='bx bx-x'></i>
+                </div>
+                <ul class="links">
+                    <li><a class="active-link link" href="../svitch-home.html">HOME</a></li>
+                    <li>
+                        <a href="javascript:void(0);">Customer Database</a>
+                        <i class='bx bxs-chevron-down customer-arrow arrow '></i>
+                        <ul class="customer-sub-menu sub-menu">
+                            <li><a href="../customerpages/customerDatabase.html">Add Customer</a></li>
+                            <li><a href="../customerpages/customerSupplyChain.html">Customer Supply Chain</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="link" href="javascript:void(0);">Project Database</a>
+                        <i class='bx bxs-chevron-down project-arrow arrow '></i>
+                        <ul class="project-sub-menu sub-menu">
+                            <li><a href="../projectPages/projectSetup.html">Project Setup</a></li>
+                            <li><a href="../projectPages/invitation.html">Invitation</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="link" href="../supplierPages/supplierDatabase.html">Supplier Database</a></li>
+                    <li class="active">
+                        <a class="link" href="javascript:void(0);">KPI Database</a>
+                        <i class='bx bxs-chevron-down kpi-arrow arrow  '></i>
+                        <ul class="kpi-sub-menu sub-menu">
+                            <li><a href="./enviromental.html">Environmental</a></li>
+                            <li class="more">
+                                <span>
+                                    <a href="javascript:void(0);">Social</a>
+                                    <i class='bx bxs-chevron-right arrow kpi-more-arrow'></i>
+                                </span>
+                                <ul class="kpi-more-sub-menu sub-menu">
+                                    <li><a href="./socialIndicators.html">Socail Indicators</a></li>
+                                    <li><a href="./wages.html">Wages</a></li>
+                                    <li><a href="./event.html">Event Database</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="./productivity.html">Productivity</a></li>
+                            <li><a href="./combinedKPI.html">Combined KPI</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="link" href="javascript:void(0);">Audit Database</a>
+                        <i class='bx bxs-chevron-down audit-arrow arrow  '></i>
+                        <ul class="audit-sub-menu sub-menu">
+                            <li><a href="../auditPages/auditDatabase.html">Auditor Database</a></li>
+                            <li><a href="../auditPages/auditSchedule.html">Audit Schedule</a></li>
+                            <li class="more">
+                                <span><a href="javascript:void(0);">Audit Database</a>
+                                    <i class='bx bxs-chevron-right arrow audit-more-arrow'></i>
+                                </span>
+                                <ul class="audit-more-sub-menu sub-menu">
+                                    <li><a href="../auditPages/kpi.html">KPI</a></li>
+                                    <li><a href="../auditPages/scheme.html">Scheme</a></li>
+                                    <li><a href="../auditPages/questionnaires.html">Questionnaries</a></li>
+                                    <li><a href="../auditPages/audit.html">Audit</a></li>
+                                    <li><a href="../auditPages/chemicalInventory.html">Chemical Inventory List</a></li>
+                                </ul>
+                            </li>
+                            <li class="more">
+                                <span><a href="javascript:void(0);">Pre Audit</a>
+                                    <i class='bx bxs-chevron-right arrow pre-audit-more-arrow'></i>
+                                </span>
+                                <ul class="pre-audit-more-sub-menu sub-menu">
+                                    <li><a href="../auditPages/factoryOnboarding.html">Factory Onboarding</a></li>
+                                    <li><a href="../auditPages/preAuditReport.html">Pre Audit Report</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="link" href="javascript:void(0);">Reports</a>
+                        <i class='bx bxs-chevron-down report-arrow arrow '></i>
+                        <ul class="report-sub-menu sub-menu">
+                            <li><a href="../reports/oekotexReport.html">Oekotex Overview Report</a></li>
+                            <li><a href="../reports/customerReport.html">Customer Report - Overview</a></li>
+                            <li><a href="../reports/supplierReport.html">Supplier Report - Overview</a></li>
+                            <li><a href="../reports/BSCIreport.html">BSCI Overview Report</a></li>
+                            <li><a href="../reports/combinedKPIReport.html">Combined KPI Analytical Report</a></li>
+                            <li><a href="../reports/baselineReport.html">Baseline Analysis Report</a></li>
+                            <li><a href="../reports/kpiReport.html">KPI Follow-up Report</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="link" href="javascript:void(0)">Power Tools</a>
+                        <i class='bx bxs-chevron-down power-arrow arrow '></i>
+                        <ul class="power-sub-menu sub-menu">
+                            <li><a href="../powerTools/classification.html">Classification Standard</a></li>
+                            <li><a href="../powerTools/passwordChange.html">Password (Change)</a></li>
+                            <li><a href="../powerTools/membershipOrganizations.html">Membership Organizations</a></li>
+                            <li><a href="../powerTools/supplier'sAttachment.html">Supplier's Attachment</a></li>
+                            <li><a href="../powerTools/productPortfolio.html">Product Portfolio</a></li>
+                            <li><a href="../powerTools/productCategory.html">Product Category</a></li>
+                            <li><a href="../powerTools/productGroup.html">Product Group</a></li>
+                            <li><a href="../powerTools/verticalIntegration.html">Vertical Integration</a></li>
+                            <li><a href="../powerTools/supplyChain.html">Supply Chain</a></li>
+                            <li><a href="../powerTools/exchangeRate.html">Exchange Rate</a></li>
+                            <li><a href="../powerTools/defaultDashboardSetup.html">Default Dashboard Setup</a></li>
+                            <li><a href="../powerTools/wageRange.html">Wages Database</a></li>
+                            <li><a href="../powerTools/attendenceDatabase.html">Attendence Database</a></li>
+                            <li><a href="../powerTools/onboardingSystem.html">Onboarding System</a></li>
+                            <li><a href="../powerTools/selfAssesmentStatus.html">Self Assessment Status</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-icons">
+                <ul>
+                    <li class="nav-item dropdown dropdown-large">
+                        <a class="nav-link dropdown-toggle dropdown-toggle-nocaret position-relative" href="#"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false"> <span
+                                class="alert-count">7</span>
+                            <i class='bx bx-bell'></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end">
+                            <a href="javascript:;">
+                                <div class="msg-header">
+                                    <p class="msg-header-title">Notifications</p>
+                                    <p class="msg-header-clear ms-auto">Marks all as read</p>
+                                </div>
+                            </a>
+                            <div class="header-notifications-list">
+                                <a class="dropdown-item" href="javascript:;">
+                                    <div class="d-flex align-items-center">
+                                        <div class="notify bg-light-primary text-primary"><i class="bx bx-group"></i>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <h6 class="msg-name">New Customers<span class="msg-time float-end">14 Sec
+                                                    ago</span></h6>
+                                            <p class="msg-info">5-5 new user registered</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item" href="javascript:;">
+                                    <div class="d-flex align-items-center">
+                                        <div class="notify bg-light-danger text-danger"><i class="bx bx-cart-alt"></i>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <h6 class="msg-name">New Orders <span class="msg-time float-end">2 min
+                                                    ago</span></h6>
+                                            <p class="msg-info">You have recived new orders</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item" href="javascript:;">
+                                    <div class="d-flex align-items-center">
+                                        <div class="notify bg-light-success text-success"><i class="bx bx-file"></i>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <h6 class="msg-name">24 PDF File<span class="msg-time float-end">19 min
+                                                    ago</span></h6>
+                                            <p class="msg-info">The pdf files generated</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item" href="javascript:;">
+                                    <div class="d-flex align-items-center">
+                                        <div class="notify bg-light-warning text-warning"><i class="bx bx-send"></i>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <h6 class="msg-name">Time Response <span class="msg-time float-end">28 min
+                                                    ago</span></h6>
+                                            <p class="msg-info">5-5.1 min avarage time response</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item" href="javascript:;">
+                                    <div class="d-flex align-items-center">
+                                        <div class="notify bg-light-info text-info"><i class="bx bx-home-circle"></i>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <h6 class="msg-name">New Product Approved <span class="msg-time float-end">2
+                                                    hrs
+                                                    ago</span></h6>
+                                            <p class="msg-info">Your new product has approved</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item" href="javascript:;">
+                                    <div class="d-flex align-items-center">
+                                        <div class="notify bg-light-danger text-danger"><i
+                                                class="bx bx-message-detail"></i>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <h6 class="msg-name">New Comments <span class="msg-time float-end">4 hrs
+                                                    ago</span></h6>
+                                            <p class="msg-info">New customer comments recived</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item" href="javascript:;">
+                                    <div class="d-flex align-items-center">
+                                        <div class="notify bg-light-success text-success"><i
+                                                class='bx bx-check-square'></i>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <h6 class="msg-name">Your item is shipped <span
+                                                    class="msg-time float-end">5-5
+                                                    hrs
+                                                    ago</span></h6>
+                                            <p class="msg-info">Successfully shipped your item</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item" href="javascript:;">
+                                    <div class="d-flex align-items-center">
+                                        <div class="notify bg-light-primary text-primary"><i class='bx bx-user-pin'></i>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <h6 class="msg-name">New 24 authors<span class="msg-time float-end">1 day
+                                                    ago</span></h6>
+                                            <p class="msg-info">24 new authors joined last week</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item" href="javascript:;">
+                                    <div class="d-flex align-items-center">
+                                        <div class="notify bg-light-warning text-warning"><i
+                                                class='bx bx-door-open'></i>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <h6 class="msg-name">Defense Alerts <span class="msg-time float-end">2 weeks
+                                                    ago</span></h6>
+                                            <p class="msg-info">45% less alerts last 4 weeks</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <a href="javascript:;">
+                                <div class="text-center msg-footer">View All Notifications</div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-user-name">
+                        <a href="#"><i class='bx bxs-user'></i></a>
+                    </li>
+                    <li class="nav-logout">
+                        <a href="#"><i class='bx bx-log-out'></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Header End -->
+
+    <!-- Page Content Start -->
+    <div class="Page-wrapper container">
+        <div class="breadcrumbs">
+            <p>You are here: <a href="#">KPI Database -</a><a href="#">Social -</a><a class="active-page" href="#">Event Database</a></p>
+        </div>
+
+        <div id="loader" style="display: none;">
+            <div class="loader" id="loader-1"></div>
+        </div>
+
+        <div class="page-content">
+            <div id="grid"></div>
+        </div>
+    </div>
+    <!-- Page Content End -->
+
+    <!-- Footer Start -->
+    <footer>
+        <div class="svitch-footer">
+            <p class="foot-line-1">Powered by: Integra Software, developed by Interactive Technologies Gateway</p>
+            <p class="foot-line-2">Itegra Software is developed by using DevCraft technology trusted by NASA, Siemens,
+                The World Bank, Visa Card, etc.</p>
+            <div class="copy-right">
+                <p>Copyright © Interactive Technologies Gateway. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+     <!--start switcher-->
+	<div class="switcher-wrapper">
+		<div class="switcher-btn"> <i class='bx bx-cog bx-spin'></i>
+		</div>
+		<div class="switcher-body">
+			<div class="d-flex align-items-center">
+				<h5 class="mb-0 text-uppercase">Theme Customizer</h5>
+				<button type="button" class="btn-close ms-auto close-switcher" aria-label="Close"></button>
+			</div>
+			<hr/>
+			<h6 class="mb-0">Theme Color</h6>
+			<hr/>
+			<div class="theme-colors-indigators">
+				<div class="row row-cols-auto g-3">
+					<div class="col color-col">
+						<div class="indigator themecolor1" id="themecolor1"></div>
+					</div>
+					<div class="col color-col">
+						<div class="indigator themecolor2" id="themecolor2"></div>
+					</div>
+					<div class="col color-col">
+						<div class="indigator themecolor3" id="themecolor3"></div>
+					</div>
+					<div class="col color-col">
+						<div class="indigator themecolor4" id="themecolor4"></div>
+					</div>
+					<div class="col color-col">
+						<div class="indigator themecolor5" id="themecolor5"></div>
+					</div>
+					<div class="col color-col">
+						<div class="indigator themecolor6" id="themecolor6"></div>
+					</div>
+					<div class="col color-col">
+						<div class="indigator themecolor7" id="themecolor7"></div>
+					</div>
+					<div class="col color-col">
+						<div class="indigator themecolor8" id="themecolor8"></div>
+					</div>
+                    <div class="col color-col">
+						<div class="indigator themecolor9" id="themecolor9"></div>
+					</div>
+                    <div class="col color-col">
+						<div class="indigator themecolor10" id="themecolor10"></div>
+					</div>
+                    <div class="col color-col">
+						<div class="indigator themecolor11" id="themecolor11"></div>
+					</div>
+                    <div class="col color-col">
+						<div class="indigator themecolor12" id="themecolor12"></div>
+					</div>
+				</div>
+			</div>
+            <hr/>
+		</div>
+	</div>
+	<!--end switcher-->
+
+    <!-- Bootstrap JS -->
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- js scripts -->
+    <script src="../assets/js/svitch-header.js"></script>
+    <script src="../assets/js/app.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#loader").show();
+            // Make an AJAX request to fetch data from the API
+            $.ajax({
+                url: "https://fakestoreapi.com/products/",
+                method: "GET",
+                dataType: "json",
+                success: function (data) {
+                    $("#loader").hide();
+                    // Initialize the Kendo UI Grid with the retrieved data
+                    $("#grid").kendoGrid({
+                        dataSource: {
+                            data: data, // Set the data from the API
+                            pageSize: 10
+                        },
+                        height: 520,
+                        sortable: true,
+                        pageable: {
+                            pageSizes: true,
+                            buttonCount: 5,
+                            pageSizes: [10, 20, 30], // Define the page size options
+                            messages: {
+                                itemsPerPage: "Page Size",
+                                display: "{0}-{1} from {2} items",
+                                empty: "No items to display"
+                            },
+                            template: "Page size: <select class='custom-dropdown'></select>", // Custom template
+                        },
+                        toolbar: ["search",
+                            {
+                                template: '<a role="button" class="k-button k-button-icontext" href="addEvent.html" >Add Event</a>',
+                                name: "add-event"
+                            }],
+                        columns: [
+                            {
+                                field: 'id',
+                                title: "<div class='custom-th'>No</div>",
+                                width: 60,
+                                attributes: {
+                                    "class": "text-center"
+                                }
+                            },
+                            {
+                                field: "price",
+                                title: "Date",
+                                width: 80
+                            },
+                            {
+                                field: "category",
+                                title: "Customer",
+                                width: 140
+                            },
+                            {
+                                field: "category",
+                                title: "Supplier",
+                                width: 140
+                            },
+                            {
+                                field: "price",
+                                title: "Data Officer",
+                                width: 140
+                            },
+                            {
+                                template: "<div class='table-actions'><span><i class='bx bx-x del-btn'></i></span><span><i class='bx bxs-pencil edt-btn' id='updateEvent'></i></span></div>",
+                                title: "<div class='custom-th'>Edit</div>",
+                                width: 80
+                            },
+                            {
+                                template: '<a href="javascript:void(0);" class="excel-download-link"><img class="excel-icon" src="../assets/images/xlsx.png" alt="Excel Icon"></a>',
+                                title: "<div class='custom-th'>Excel</div>",
+                                width: 80,
+                                attributes: {
+                                    "class": "text-center"
+                                }
+                            }
+                        ]
+                    });
+                    setTimeout(function () {
+                        $(".k-pager-sizes select").addClass("custom-dropdown");
+                    }, 100);
+
+                },
+                error: function (error) {
+                    console.log("Error fetching data: " + error);
+                }
+            });
+            $(document).on("click", "#updateEvent", function () {
+                window.location.href = "updateEvent.html"; // Redirect to the desired page
+            });
+        });
+    </script>
+
+</body>
+
+</html>
